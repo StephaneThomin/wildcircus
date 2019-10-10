@@ -36,6 +36,6 @@ Ou via votre IDE si celui-ci le permet (Visual Studio Code par exemple).
 
 Le projet sera disponible sur votre navigateur à l'adresse **http://localhost:8080/**
 
-## Auteurs
+## Auteur
 
 * **Stéphane THOMIN** - *Développeur* - (https://github.com/stephanethomin)

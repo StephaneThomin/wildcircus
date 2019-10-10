@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-success">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" th:href="@{/}">
 				<img th:src="@{../clown.png}" alt="clown">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
 						<a class="nav-link" th:href="@{/price}">Sessions and Prices</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Localisation</a>
+						<span class="nav-link">Localisation</span>
 					</li>
 				</ul>
 			</div>
