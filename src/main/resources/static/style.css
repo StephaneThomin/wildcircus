@@ -1,7 +1,7 @@
 body {
 	background-image:url("https://image.freepik.com/free-photo/red-yellow-grunge-sunburst-vintage-background-with-space_1627-1939.jpg");/*adresse de l'image gratuite*/
-	background-size:100%;/*taille de l'image*/
-	text-align:center;/*centrage de la page*/
+	background-size:100%;
+	text-align:center;
 }
 
 .title {
@@ -31,8 +31,19 @@ body {
 	margin-top: 2%;
 }
 
+.avatar:hover{
+	background-color: green;
+	border: 1px dotted black;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.decal {
+	margin-left: 0%;
+}
+
 .table {
-	background-color:green;
+	background-color:lightblue;
 	border:2px solid black;
 	margin-top: 3%;
 	margin-right:auto;

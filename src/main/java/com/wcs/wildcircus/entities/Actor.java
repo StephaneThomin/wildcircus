@@ -52,5 +52,8 @@ public class Actor {
   public void setSpecialisation(String specialisation) {
     this.specialisation = specialisation;
   }
+
+  public Actor() {
+  }
   
 }
