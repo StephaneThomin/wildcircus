@@ -1,5 +1,5 @@
 body {
-	background-image:url("https://image.freepik.com/free-photo/red-yellow-grunge-sunburst-vintage-background-with-space_1627-1939.jpg");/*adresse de l'image gratuite*/
+	background-image:url("https://image.freepik.com/free-photo/red-yellow-grunge-sunburst-vintage-background-with-space_1627-1939.jpg");
 	background-size:100%;
 	text-align:center;
 }
@@ -12,12 +12,12 @@ body {
 	display: inline-block;
 	background-color: green;
 	width: 350px;
-	border:1px solid black;
-	border-radius: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
 }
 
 .about {
-	border:2px solid black;
+	border:2px dashed black;
 	background-color: lightblue;
 	width:50%;
 	margin-top: 5%;
@@ -36,10 +36,6 @@ body {
 	border: 1px dotted black;
 	border-radius: 50px;
 	cursor: pointer;
-}
-
-.decal {
-	margin-left: 0%;
 }
 
 .table {
@@ -62,4 +58,6 @@ td {
 .maps {
 	width: 66%;
 	margin-top: 3%;
+	border-radius: 20px;
+	box-shadow: 6px 6px 6px black;
 }

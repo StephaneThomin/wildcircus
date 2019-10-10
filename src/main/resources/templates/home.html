@@ -11,16 +11,16 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-success">
-			<a class="navbar-brand" href="#">
+			<span class="navbar-brand">
 				<img th:src="@{../clown.png}" alt="clown">
-			</a>
+			</span>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<span class="nav-link">Home</span>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" th:href="@{/price}">Sessions and Prices</a>
@@ -33,7 +33,9 @@
 		</nav>
 		<h1 class="title">Wild Circus</h1>
 		<p class="about">
-			Come today, discover our shows featuring our clown artists,acrobats, trapeze artists, musicians, dancers, tightrope walkers, jugglers, magicians and cyclists. Come also meet our trained animals passing in hoops of fire.
+			Come today, discover our shows featuring our clown artists,acrobats, trapeze artists,<br> 
+			musicians, dancers, tightrope walkers, jugglers, magicians and cyclists.<br>
+			Come also meet our trained animals passing in hoops of fire.
 		</p>
 		<h2 class="title">Actors</h2>
 		<div>
