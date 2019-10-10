@@ -34,53 +34,16 @@
 		<h1 class="title">Prices and Sessions</h1>
 
 		<table class="table">
-			<thead>
-				<tr>
-					<th>(Prices in Euros)</th>
-					<th>Adults</th>
-					<th>Childs (below 12 years)</th>
-					<th>Groups(more 10 persons)</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Week</td>
-					<td>12</td>
-					<td>6</td>
-					<td>96</td>
-				</tr>
-				<tr>
-					<td>Week-end</td>
-					<td>10</td>
-					<td>5</td>
-					<td>80</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table class="table">
-			<thead>
-				<tr>
-					<th></th>
-					<th>Clown Artists</th>
-					<th>Acrobats</th>
-					<th>Trapeze Artists</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Morning</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Afternoon</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</tbody>
+			<tr>
+				<th>Date</th>
+				<th>Circus Name</th>
+				<th>Price in Euros</th>
+			</tr>
+			<tr th:each="meeting : ${sessions}">
+				<td th:text="${meeting.date}"></td>
+				<td th:text="${meeting.name}"></td>
+				<td th:text="${meeting.price}"></td>
+			</tr>
 		</table>
 		
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

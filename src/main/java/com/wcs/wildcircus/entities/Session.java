@@ -55,4 +55,6 @@ public class Session {
     this.price = price;
   }
 
+  public Session() {
+  }
 }
