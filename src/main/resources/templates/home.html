@@ -36,17 +36,26 @@
 			Come today, discover our shows featuring our clown artists,acrobats, trapeze artists, musicians, dancers, tightrope walkers, jugglers, magicians and cyclists. Come also meet our trained animals passing in hoops of fire.
 		</p>
 		<h2 class="title">Actors</h2>
-		<div class="mt-5">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
-			<img class="avatar" th:src="@{../avatar.png}" alt="avatar">
+		<div>
+			<span th:each="actor : ${actors}" class="mt-4">
+				<img class="avatar" th:src="@{../avatar.png}" alt="avatar" data-toggle="modal" th:data-target="|#actor${actor.id}|">
+				<div class="modal fade" th:id="|actor${actor.id}|" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<img class="avatar m-auto" th:src="@{../avatar.png}" alt="avatar">
+							</div>
+							<div class="modal-body">
+								Name :&nbsp;<span th:text="${actor.name}"></span>
+								<br>
+								Email :&nbsp;<span th:text="${actor.email}"></span>
+								<br>
+								Specialisation :&nbsp;<span th:text="${actor.specialisation}"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</span>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
